@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>晶石科技主页</title>
+  <script type="text/javascript">
+  var i = 1;
+  /*图片轮转函数*/
+  function chang(){
+      i++;
+      var imgObj = document.getElementById("img1");
+      imgObj.src = "img/img"+i+".jpg";
+      if (i == 4) {
+        i = 1;
+        imgObj.src = "img/img"+i+".jpg";
+      } else {
+        imgObj.src = "img/img"+i+".jpg";
+      }
+  }
+  window.onload = function (){
+    var time1 = setInterval(chang,2000);
+  } 
+  </script>
+  <style type="text/css">
+  /*全局样式*/
+  body,a,img,input,ul,li,p{margin:0;padding:0;border:0px;}
+  body{font-size:12px;font-family:Arial,宋体;color:#444}
+  a:link,a:visited{text-decoration:none;}
+  .clear{clear:both;}
+  ul,li{list-style:none;}
+  /*box样式*/
+  .box{width:1200px;margin:0 auto;}
+  .box1{width:100%;border-bottom:4px solid #d0d0d0;background-color:#133563;}
+  /*top1属性*/
+  .top1{height:36px;line-height:36px;margin:0 auto;width:1200px;}
+  .top1 a:hover{text-decoration:underline;}
+  .top1 a{padding:0 10px;color:#e2eefd}
+  /*top2属性*/
+	.top2{height:97px;}
+  	.top2_1{float:left;width:830px;}
+	.top2_2 ul li{float:left;}
+	.tijiao{width:34px;height:31px;background-image:url(img/but.png);}
+	.pro{border:1px solid #e6e6e6;width:150px;height:29px;}
+	.kong{padding:8px;}
+	.top2_2{padding-top:35px;}
+   /*top3属性*/
+    .box3{border-top:4px solid #d0d0d0;background-color:#143463;width: 100%;}
+  	.top3{height:53px;margin: 0 auto;width: 1200px;}
+	.top3 li{border-left:1px solid #1d5298;float:right;font-size:20px;font-weight:bold;padding:14px 35px;}
+	.top3 img{float:left;padding-left:52px;}
+	.top3 a{color:#ffffff;}
+   /*top4属性*/
+   .top4{width:45px;padding-top:3px;}
+   /*top5属性*/
+   .top5{margin-top:16px;}
+   /*top6属性*/
+   .top6{width:1200px;}
+   .biaoti{font-size:25px;font-weight:bold;}
+   .content{font-size:15px;color:#838383}
+   .top6_left{float:left;width:613px;}
+   .top6_right{float:right;width:565px;}
+   .top6_right .biaoti{padding-right:100;}
+   .top6_right img{border:1px solid #e6e7e7;padding:5px;}
+   .top6_right img:hover{border:1px solid red;padding:5px;}
+   .top6_right li > a{float:left;padding-left:2px;}
+   .top6_right p > a:link,a:visited{color:#838383;font-weight:bold;}
+   .top6_right p > a:hover{color:red;font-weight:bold;text-decoration:underline;}
+   .top6_right li > span{float:right;width:423px;}
+   .top6_right ul{padding-top:10px;font-size:12px;color:#838383;line-height:22px;}
+   .s{height:21px;}
+  </style>
+ </head>
+ <body>
+ 	<div class="box1">
+		<div class="top1">
+			<a href="#">主页</a>
+			<a href="#">公司新闻</a>
+			<a href="#">主要产品</a>
+			<a href="#">在线留言</a>
+			<a href="#">联系方式</a>
+		</div>
+ 	</div>
+	<div class="box">
+		
+		<div class="top2">
+			<div class="top2_1"><img src="img/login.jpg"/></div>
+			
+			<div class="top2_2">
+				<form action="#">
+					<ul> 		
+						<li><input type="text" name="proname" class="pro"></li>
+						<li><input type="submit" value="" name="tijiao" class="tijiao"/></li>
+						<li class="kong"><img src="img/y1.jpg"><a href="#">简体中文</a></li>
+						<li class="kong"><img src="img/y2.jpg"><a href="#">ENGLISH</a></li>
+					</ul>
+				</form>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<div class="box3">
+		<div class="top3">
+		    <img src="img/hose.png"/>
+			<ul>
+				<li><a href="#">科技创新</a></li>
+				<li><a href="#">产品系列</a></li>
+				<li><a href="#">企业体系</a></li>
+				<li><a href="#">新闻中心</a></li>
+				<li><a href="#">练习方式</a></li>
+				<li><a href="#">公司简介</a></li>
+				<li><a href="#">在线留言</a></li>
+			</ul>
+			<div class="clear"></div>
+		</div>
+
+	</div>
+		
+		<div class="box">
+		<div class="top4">
+			<img id = "img1" src="img/img1.jpg"/>
+		</div>
+		<div class="top5">
+			<img src="img/long.jpg"/>
+		</div>
+		<div class="top5">
+			<img src="img/long2.jpg"/>
+		</div>
+		<div class="top5">
+			<img src="img/long.jpg"/>
+		</div>
+		<div class="top6">
+			<div class="top6_left">
+				<span class="biaoti">设备展示</span><br/>
+				<img src="img/shebei.jpg"/><br/>
+				<span class="content">公司已通过TS16949汽车行业质量体系认证，并秉承“严谨每一个环节，精湛每一个细节”的品质管理原则，力争为振兴中国汽车电子零部件行业做贡献。</span>
+			</div>
+			<div class="top6_right">
+				<span class="biaoti">最新资讯</span>
+				<ul>
+					<li> 
+					<a href="#"><img src="img/fangzi.jpg"/></a>
+					<span><p><a href="#">热烈祝贺无锡晶晟科技股份有限公司网站成功上线</a></p>
+					概要： 公司基于在电磁元器件制造和技术方面的优势，
+					凭借具有国际先进水平的生产装备、试验
+					设备,专业开发和制造汽...</span>
+					</li>
+					
+					<div class="clear"></div><div class="s"></div>
+					<li> 
+					<a href="#"><img src="img/fangzi.jpg"/></a>
+					<span><p><a href="#">热烈祝贺无锡晶晟科技股份有限公司网站成功上线</a></p>
+					概要： 公司基于在电磁元器件制造和技术方面的优势，
+					凭借具有国际先进水平的生产装备、试验
+					设备,专业开发和制造汽...</span>
+					</li>
+					
+					<div class="clear"></div><div class="s"></div>
+					<li> 
+					<a href="#"><img src="img/fangzi.jpg"/></a>
+					<span><p><a href="#">热烈祝贺无锡晶晟科技股份有限公司网站成功上线</a></p>
+					概要： 公司基于在电磁元器件制造和技术方面的优势，
+					凭借具有国际先进水平的生产装备、试验
+					设备,专业开发和制造汽...</span>
+					</li>
+					
+					<div class="clear"></div><div class="s"></div>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+ </body>
+</html>
